@@ -1,0 +1,28 @@
+# Development files
+.vscode/
+.idea/
+.DS_Store
+.env*
+*.log
+*.log.*
+
+# Source files
+src/
+public/
+examples/
+
+# Build configuration
+vite.config.js
+.eslintrc.json
+.prettierrc
+tsconfig.json
+
+# Git files
+.git/
+.gitignore
+
+# Documentation files (README.md is automatically included)
+docs/
+
+# Development dependencies
+node_modules/
