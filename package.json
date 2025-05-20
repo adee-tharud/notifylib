@@ -1,10 +1,16 @@
 {
-  "name": "reactnotifyx",
+  "name": "notifypro",
   "description": "A flexible notification system for React applications",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.module.js",
+      "require": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],

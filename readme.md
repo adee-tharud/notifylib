@@ -15,13 +15,13 @@ A flexible, customizable notification system for React applications.
 ## Installation
 
 ```bash
-npm install react-notifyx
+npm install notifypro
 ```
 
 or
 
 ```bash
-yarn add react-notifyx
+yarn add notifypro
 ```
 
 ## Quick Start
@@ -32,7 +32,7 @@ Wrap your application with the `NotificationProvider`:
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
-import { NotificationProvider } from 'react-notifyx';
+import { NotificationProvider } from 'notifypro';
 
 const root = createRoot(document.getElementById('root'));
 
@@ -49,7 +49,7 @@ Then use the `useNotification` hook in your components:
 
 ```jsx
 import React from 'react';
-import { useNotification } from 'react-notifyx';
+import { useNotification } from 'notifypro';
 
 function MyComponent() {
   const { success, error, warning, info } = useNotification();
@@ -160,12 +160,27 @@ const fetchData = async () => {
 };
 ```
 
+### Customize Content
+Render Customize react component in notification,
+
+```bash
+info(() => (
+  <div>
+    <h4>Custom Component</h4>
+    <p>This is a custom React component in a notification!</p>
+    <button onClick={() => console.log('Clicked inside notification')}>
+      Click me
+    </button>
+  </div>
+));
+```
+
 ### useNotificationState Hook
 
 Access notification state without the action functions:
 
 ```jsx
-import { useNotificationState } from 'react-notifyx';
+import { useNotificationState } from 'notifypro';
 
 function NotificationCounter() {
   const { notifications } = useNotificationState();
@@ -185,7 +200,7 @@ function NotificationCounter() {
 Import the `POSITIONS` constant to use predefined positions:
 
 ```jsx
-import { POSITIONS } from 'react-notifyx';
+import { POSITIONS } from 'notifypro';
 
 <NotificationProvider
   config={{
@@ -209,7 +224,7 @@ Available positions:
 Import the `NOTIFICATION_TYPES` constant for type references:
 
 ```jsx
-import { NOTIFICATION_TYPES } from 'react-notifyx';
+import { NOTIFICATION_TYPES } from 'notifypro';
 
 // Using the addNotification function
 const { addNotification } = useNotification();
