@@ -1,7 +1,7 @@
 {
   "name": "notifypro",
   "description": "A flexible notification system for React applications",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -45,5 +45,4 @@
   ],
   "author": "Adeesha tharud",
   "license": "MIT"
-  
 }
