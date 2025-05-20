@@ -1,7 +1,7 @@
 {
   "name": "notifypro",
   "description": "A flexible notification system for React applications",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "dist/notifypro.umd.js",
   "module": "dist/notifypro.es.js",
