@@ -3,12 +3,12 @@
   "description": "A flexible notification system for React applications",
   "version": "0.1.1",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/notifypro.umd.js",
+  "module": "dist/notifypro.es.js",
   "exports": {
     ".": {
-      "import": "./dist/index.module.js",
-      "require": "./dist/index.js"
+      "import": "./dist/notifypro.es.js",
+      "require": "./dist/notifypro.umd.js"
     }
   },
   "files": [
