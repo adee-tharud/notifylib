@@ -1,4 +1,4 @@
-# React NotifyX
+# React NotifyPro
 
 A flexible, customizable notification system for React applications.
 
@@ -64,25 +64,6 @@ function MyComponent() {
     </button>
   );
 }
-```
-
-## API
-
-### NotificationProvider
-
-Wrapper component that provides the notification context.
-
-```jsx
-<NotificationProvider
-  config={{
-    position: 'top-right', // Position of notifications
-    duration: 5000, // Default duration in ms
-    maxCount: 5, // Maximum number of notifications to show
-    theme: 'light', // Theme: 'light' or 'dark'
-  }}
->
-  {children}
-</NotificationProvider>
 ```
 
 ### useNotification Hook
